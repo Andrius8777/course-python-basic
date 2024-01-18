@@ -11,8 +11,8 @@ Reikalavimai
 * Suskaičiuoti biudžeto balansą
 
 """
-# raktas masina
-# 500 reiksme
+import os
+import pickle
 
 
 def prideti_iplaukas_islaidas(biudzetas, pavadinimas: str, suma: float):    # 1 Pridėti pajamas arba išlaidas
