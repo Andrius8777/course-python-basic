@@ -1,0 +1,33 @@
+Turim parasyta programa pvz:
+
+def pasisveikinti(vardas):
+    return f"Sveikas, {vardas}!"
+
+def sudetis(x, y):
+    return x + y
+
+class ManoKlase:
+    def __init__(self, x):
+        self.x = x
+
+    def kvadratas(self):
+        return self.x ** 2
+
+Norim ja isskaidyti gabalais i failiukus, struktura failiuka yra lb svarbi.
+Paleidus sita mineta virsuj programa, ji tiesiog neveiks mes ja isskaidysim.
+Taigi issaugojam i "mano_mod.py" faila ir ikeliam i kazkokia noname papke.
+Pasibandymui ja galime issikviest pvz susikure bet koki jupyter faila: pvz 
+iskvietimas.ipynb prasitestavimui
+
+kazkodel prasitestavime meta kreiva atsakyma!!! issiaiskint!!!!
+<mano_mod.ManoKlase object at 0x00000222AAC4EFF0>
+
+
+ISSIKVIESTI FUNKCIJAS VISAS:
+TAIGI SUSIKUREM FAILA: mano_mod.py
+Susikuriam dar faila: pagrindinis.py (is sito failo leisim mano_mod faile funkcijas)
+
+
+==========================
+isskaidymas i daugiau failu i atskirus aplankus, kad pasileistu kodas, siuo atveju reikia atskirai sukurti pyhton failus pvz sudetis, ManoKlase, main
+visiems jiems reikia sukurti atskirus py failiukus ir butinai tuscias __init__.py failiukas turetu buti kiekvienoj papkej
