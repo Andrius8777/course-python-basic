@@ -1,16 +1,17 @@
 import PySimpleGUI as sg
 
 layout = [
-    [sg.Text("Koks tavo vardas?", font="Verdana 15")],
-    [sg.Input(key="-NAME-", font="Terminal 15")],
+    [sg.Text("Failo kelias c:/?", font="Broadway 25")],
+    [sg.Input(key="-Ivestis-", font="Terminal 15")],
     [
-        sg.Button("Pasisveikinti", key="-HELLO-"), 
-        sg.Button("Atsisveikinti", key="-BYE-"),
+        sg.Button("Ikelti PDF faila", key="Failas ikeltas"), 
+        sg.Button("Ikelti sablona", key="Sablonas ikeltas"),
+        sg.Button("Start", key="Failas sukonvertuotas"),
     ],
-    [sg.Text(size=(40, 1), key="-OUTPUT-", font="Verdana 15")],
+    [sg.Text(size=(50, 1), key="-OUTPUT-", font="Terminal 15")],
 ]
 
-window = sg.Window("LABAS", layout)
+window = sg.Window("Mano pirmoji programa v.01", layout)
 sg.DEFAULT_FONT
 
 while True:
@@ -18,15 +19,20 @@ while True:
     if event == sg.WINDOW_CLOSED:
         break
 
-    if event == "-HELLO-":
+    if event == "Failas ikeltas":
         window["-OUTPUT-"].update(
-            f"Sveiki {values['-NAME-']}",
-            text_color="#99ff99"
+            f"Failas sekmingai pridetas {values['-Ivestis-']}",
         )
-    elif event == "-BYE-":
+    elif event == "Sablonas ikeltas":
         window["-OUTPUT-"].update(
-            f"Viso gero {values['-NAME-']}",
-            text_color="#ff9999"
+            f"Ikelimas pavyko {values['-Ivestis-']}",
+        )
+    elif event == "Failas sukonvertuotas":
+        window["-OUTPUT-"].update(
+            f'Konvertacija pavyko! {'C:/new_folder/'}',
         )
 
 window.close()
+
+
+#
