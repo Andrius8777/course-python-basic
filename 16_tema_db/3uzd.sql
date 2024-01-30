@@ -1,0 +1,1 @@
+SELECT * FROM mokytojai WHERE specialybe = 'Matematika';
