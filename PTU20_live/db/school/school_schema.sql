@@ -40,3 +40,4 @@ CREATE TABLE IF NOT EXISTS grade (
     subject_id INTEGER REFERENCES subject(id),
     teacher_id INTEGER REFERENCES teacher(id)
 );
+------
